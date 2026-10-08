@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IOT-TSDB 测点管理</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="layout">
+  <aside id="sidebar">
+    <div class="brand">IOT-TSDB<span>测点管理</span></div>
+    <nav>
+      <a href="#/dashboard" :class="{active: route==='dashboard'}">总览</a>
+      <a href="#/points" :class="{active: route==='points'}">测点管理</a>
+      <a href="#/realtime" :class="{active: route==='realtime'}">实时值</a>
+      <a href="#/history" :class="{active: route==='history'}">历史分析</a>
+      <a href="#/io" :class="{active: route==='io'}">点表导入导出</a>
+      <a href="#/backup" :class="{active: route==='backup'}">备份还原</a>
+    </nav>
+    <div class="side-foot">
+      <a href="/graph" target="_blank">原生 Prometheus UI</a>
+      <a href="/tsdb-status" target="_blank">TSDB 状态</a>
+    </div>
+  </aside>
+  <main id="main">
+    <div v-if="toast.msg" :class="['toast', toast.type]">{{ toast.msg }}</div>
+    <component :is="view"></component>
+  </main>
+</div>
+<script src="vendor/vue.global.prod.js"></script>
+<script src="vendor/echarts.min.js"></script>
+<script src="api.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
