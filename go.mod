@@ -1,6 +1,6 @@
 module github.com/prometheus/prometheus
 
-go 1.19
+go 1.23
 
 require (
 	github.com/Azure/azure-sdk-for-go v65.0.0+incompatible
@@ -18,7 +18,7 @@ require (
 	github.com/edsrzf/mmap-go v1.1.0
 	github.com/envoyproxy/go-control-plane v0.11.0
 	github.com/envoyproxy/protoc-gen-validate v1.0.1
-	github.com/fsnotify/fsnotify v1.6.0
+	github.com/fsnotify/fsnotify v1.10.1
 	github.com/go-kit/log v0.2.1
 	github.com/go-logfmt/logfmt v0.6.0
 	github.com/go-openapi/strfmt v0.21.7
@@ -66,7 +66,7 @@ require (
 	golang.org/x/net v0.10.0
 	golang.org/x/oauth2 v0.8.0
 	golang.org/x/sync v0.2.0
-	golang.org/x/sys v0.8.0
+	golang.org/x/sys v0.13.0
 	golang.org/x/time v0.3.0
 	golang.org/x/tools v0.9.3
 	google.golang.org/api v0.114.0
