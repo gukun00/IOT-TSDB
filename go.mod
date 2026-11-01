@@ -1,6 +1,6 @@
 module github.com/prometheus/prometheus
 
-go 1.19
+go 1.26.0
 
 require (
 	github.com/Azure/azure-sdk-for-go v65.0.0+incompatible
@@ -64,7 +64,7 @@ require (
 	go.uber.org/automaxprocs v1.5.2
 	go.uber.org/goleak v1.2.1
 	golang.org/x/net v0.10.0
-	golang.org/x/oauth2 v0.8.0
+	golang.org/x/oauth2 v0.37.0
 	golang.org/x/sync v0.2.0
 	golang.org/x/sys v0.8.0
 	golang.org/x/time v0.3.0
@@ -83,7 +83,7 @@ require (
 )
 
 require (
-	cloud.google.com/go/compute/metadata v0.2.3 // indirect
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.3.0 // indirect
 	github.com/AzureAD/microsoft-authentication-library-for-go v0.8.1 // indirect
 	github.com/coreos/go-systemd/v22 v22.5.0 // indirect
@@ -96,7 +96,6 @@ require (
 )
 
 require (
-	cloud.google.com/go/compute v1.19.0 // indirect
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest/date v0.3.0 // indirect
 	github.com/Azure/go-autorest/autorest/to v0.4.0 // indirect
